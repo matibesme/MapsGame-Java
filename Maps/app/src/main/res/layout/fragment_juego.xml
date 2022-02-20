@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JuegoFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/countrie1"
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="552dp"
+        android:backgroundTint="#332940"
+        android:fontFamily="@font/aclonica"
+        android:text="Button"
+        android:textColor="#FDFDFD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/countrie2"
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#332940"
+        android:fontFamily="@font/aclonica"
+        android:text="Button"
+        android:textColor="#FDFDFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/countrie1"
+        app:layout_constraintTop_toTopOf="@+id/countrie1" />
+
+    <Button
+        android:id="@+id/countrie3"
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#332940"
+        android:fontFamily="@font/aclonica"
+        android:text="Button"
+        android:textColor="#FDFDFD"
+        app:layout_constraintStart_toStartOf="@+id/countrie1"
+        app:layout_constraintTop_toBottomOf="@+id/countrie1" />
+
+    <Button
+        android:id="@+id/countrie4"
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#332940"
+        android:fontFamily="@font/aclonica"
+        android:text="Button"
+        android:textColor="#FDFDFD"
+        app:layout_constraintStart_toStartOf="@+id/countrie2"
+        app:layout_constraintTop_toBottomOf="@+id/countrie1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

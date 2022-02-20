@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".ResultadoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#232323"
+
+        android:fontFamily="@font/alconica2"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="Ranking"
+        android:textColor="#FAF8F8"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNumJugador"
+        android:layout_width="94dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/alconica2"
+        android:gravity="center"
+        android:text="N°"
+        android:textColor="#FAF8F8"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tvNombreJugadores"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alconica2"
+        android:gravity="center"
+        android:text="Nombre"
+        android:textColor="#FAF8F8"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvNumJugador"
+        app:layout_constraintTop_toTopOf="@+id/tvNumJugador" />
+
+    <TextView
+        android:id="@+id/tvTiempo"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/alconica2"
+        android:gravity="center"
+        android:text="Tiempo"
+        android:textColor="#FAF8F8"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvNombreJugadores"
+        app:layout_constraintTop_toTopOf="@+id/tvNombreJugadores" />
+
+    <TextView
+        android:id="@+id/tvAciertosJugadores"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alconica2"
+        android:gravity="center"
+        android:text="Aciertos"
+        android:textColor="#FAF8F8"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTiempo"
+        app:layout_constraintTop_toTopOf="@+id/tvTiempo" />
+
+    <ListView
+        android:id="@+id/listaRanking"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumJugador">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="239dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#332940"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Volver a jugar"
+        android:textColor="#FDFDFD"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".AcercaDeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#232323"
+
+        android:fontFamily="@font/alconica2"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="Acerca De"
+        android:textColor="#FAF8F8"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+
+        android:backgroundTint="#232323"
+        android:fontFamily="@font/alconica2"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="Este juego consiste en acertar en el pais ubicado. Usted tendra 4 opciones y se le otorgara el numero de aciertos al final del juego. Este juego consiste en 10 preguntas, armando un ranking de los mejores jugadores(Se toma en cuenta el timpo), Suerte que la vas a necesitar!!!!"
+        android:textColor="#FAF8F8"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnArrancar"
+        android:layout_width="239dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#332940"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Jugar"
+        android:textColor="#FDFDFD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.907" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

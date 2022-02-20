@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".InicioFragment">
+
+
+    <TextView
+        android:id="@+id/tvPonerNombre"
+        android:layout_width="412dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#232323"
+        android:fontFamily="@font/alconica2"
+        android:gravity="center"
+        android:text="Ponga su nombre"
+        android:textColor="#FAF8F8"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPonerNombre2"
+        android:layout_width="412dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#232323"
+        android:fontFamily="@font/alconica2"
+        android:gravity="center"
+        android:text="Bienvenido a un nuevo desafio!!!"
+        android:textColor="#FAF8F8"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:background="@drawable/etstyle"
+        android:backgroundTint="#232323"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:hint="Ingrese nombre"
+        android:inputType="textPersonName"
+        android:textColor="#FDFDFD"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPonerNombre" />
+
+    <Button
+        android:id="@+id/btnJugar"
+        android:layout_width="239dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#332940"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Comenzar"
+        android:textColor="#FDFDFD"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPonerNombre2"
+        app:layout_constraintVertical_bias="0.879" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="188dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
